@@ -1,0 +1,163 @@
+body {
+    width:100vw;
+    background-color: #f8f5f1;
+    animation: transitionIn 0.75s;
+}
+@keyframes transitionIn {
+    from {
+        opacity: 0;
+        transform: rotate( 10deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: rotate(0);
+    }
+}
+
+.table-container {
+    margin: 10%;
+    background-color: ghostwhite;
+}
+/* BUTTON WHEN SCREENLESS THAN 600px */
+#buttons{
+    flex-direction: row;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  button {
+    margin: 10%;
+  }
+  .custom-btn {
+    width: 130px;
+    height: 40px;
+    color: black;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight:lighter;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: none;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+      7px 7px 20px 0px rgba(0, 0, 0, .1),
+      4px 4px 5px 0px rgba(0, 0, 0, .1);
+    outline: none;
+  }
+  
+  .btn-8 {
+    background-color: #f0ecfc;
+    background-image: linear-gradient(315deg, #f0ecfc 0%, #db9d40 74%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+  }
+  
+  .btn-8 span {
+    position: relative;
+    display: none;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .btn-8:before,
+  .btn-8:after {
+    position: absolute;
+    content: "";
+    right: 0;
+    bottom: 0;
+    background: #db9d40;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-8:before {
+    height: 0%;
+    width: 2px;
+  }
+  
+  .btn-8:after {
+    width: 0%;
+    height: 2px;
+  }
+  
+  .btn-8:hover:before {
+    height: 100%;
+  }
+  
+  .btn-8:hover:after {
+    width: 100%;
+  }
+  
+  .btn-8:hover {
+    background: transparent;
+  }
+  
+  .btn-8 span:hover {
+    color: #db9d40;
+  }
+  
+  .btn-8 span:before,
+  .btn-8 span:after {
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    background: #db9d40;
+    transition: all 0.3s ease;
+  }
+  
+  .btn-8 span:before {
+    width: 2px;
+    height: 0%;
+  }
+  
+  .btn-8 span:after {
+    height: 2px;
+    width: 0%;
+  }
+  
+  .btn-8 span:hover:before {
+    height: 100%;
+  }
+  
+  .btn-8 span:hover:after {
+    width: 100%;
+  }
+  
+  @media only screen and (max-width: 767px) {
+    .custom-btn {
+      display: inline-block;
+    }
+  
+    .btn-8 span {
+      display: block;
+    }
+  }
+  
+  @media only screen and (max-width: 450px) {
+    #buttons {
+      flex-direction: column;
+      margin: 0;
+      display: flex;
+      align-items: center;
+    }
+  
+  }
+/* Button ends */
+footer {
+    margin-top: 10%;
+    text-align: -webkit-center;
+    background: #fbe6c2;
+    opacity: 0.6;
+    padding: 1.2%;
+}
+  @media only screen and (max-width:550px) {
+    body {
+        width: fit-content;
+        /* background-color: #f8f5f1; */
+        animation: transitionIn 0.75s;
+    }
+  }

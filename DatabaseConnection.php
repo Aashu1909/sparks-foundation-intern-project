@@ -1,8 +1,8 @@
 <?php
-$_SERVER="sql313.epizy.com";
-$username="epiz_28202064";
-$password="GvqGJahzxey";
-$database="epiz_28202064_spark_bank";
+$_SERVER="localhost";
+$username="root";
+$password="";
+$database="transfer_money";
 
 $connection=mysqli_connect($_SERVER,$username,$password,$database);
 if(!$connection){
